@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-
 .css-spectacular-button {
     box-sizing: border-box;
     padding: 8px 16px 10px 16px;
@@ -9,7 +7,6 @@
     position: relative;
     z-index: 1;
     transition: all 350ms;
-    font-family: 'Open Sans';
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,9 +28,21 @@
     height: 100%;
 }
 
-.css-spectacular-button-primary-1:focus {
-    opacity: .8;
+.css-spectacular-button:focus {
+    box-shadow: 0px 0px 10px 3px var(--focus-shadow);
 }
+
+.css-spectacular-button:disabled{
+    opacity: .8;
+    cursor: not-allowed;
+}
+
+.css-spectacular-button:disabled:hover::before {
+    height: 3px;
+}
+
+
+
 
 /* Primary 1 */
 .css-spectacular-button-primary-1 {
@@ -47,4 +56,80 @@
 
 .css-spectacular-button-primary-1::before {
     background: var(--primary-event-1);
+}
+
+.css-spectacular-button-primary-1:disabled:hover {
+    color: var(--primary-text-1);
+}
+
+/* Primary 2 */
+.css-spectacular-button-primary-2 {
+    background: var(--primary-2);
+    color: var(--primary-text-2);
+}
+
+.css-spectacular-button-primary-2:hover {
+    color: var(--primary-text-event-2);
+}
+
+.css-spectacular-button-primary-2::before {
+    background: var(--primary-event-2);
+}
+
+.css-spectacular-button-primary-2:disabled:hover {
+    color: var(--primary-text-2);
+}
+
+/* Primary 3 */
+.css-spectacular-button-primary-3 {
+    background: var(--primary-3);
+    color: var(--primary-text-3);
+}
+
+.css-spectacular-button-primary-3:hover {
+    color: var(--primary-text-event-3);
+}
+
+.css-spectacular-button-primary-3::before {
+    background: var(--primary-event-3);
+}
+
+.css-spectacular-button-primary-3:disabled:hover {
+    color: var(--primary-text-3);
+}
+
+/* Primary 4 */
+.css-spectacular-button-primary-4 {
+    background: var(--primary-4);
+    color: var(--primary-text-4);
+}
+
+.css-spectacular-button-primary-4:hover {
+    color: var(--primary-text-event-4);
+}
+
+.css-spectacular-button-primary-4::before {
+    background: var(--primary-event-4);
+}
+
+.css-spectacular-button-primary-4:disabled:hover {
+    color: var(--primary-text-4);
+}
+
+/* Primary 5 */
+.css-spectacular-button-primary-5 {
+    background: var(--primary-5);
+    color: var(--primary-text-5);
+}
+
+.css-spectacular-button-primary-5:hover {
+    color: var(--primary-text-event-5);
+}
+
+.css-spectacular-button-primary-5::before {
+    background: var(--primary-event-5);
+}
+
+.css-spectacular-button-primary-5:disabled:hover {
+    color: var(--primary-text-5);
 }

@@ -1,23 +1,28 @@
 import React from 'react';
 import styles from './Button.module.css';
 import { ComponentTypes } from '../../Themes/Theme';
-import { ComponentType, FontWeight } from '../../Shared/BaseProps';
+import { IComponentType, IDisabled, IFontWeight, IWithId } from '../../Shared/BaseProps';
 
-interface Props extends FontWeight, ComponentType {
+interface Props extends IWithId, IFontWeight, IComponentType, IDisabled {
     text?: string;
     icon?: string | JSX.Element;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void | undefined;
 }
 
-export const Button = (props: Props) => {
+export const Button = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
     const type: ComponentTypes = props.type ? props.type : ComponentTypes.Primary_1;
-    const fontWeight = props.fontWeight ? props.fontWeight : 600;
-    const { text, icon } = props;
+    const fontWeight = props.fontWeight ? props.fontWeight : 500;
+    const { id, text, icon, disabled, onClick } = props;
 
     return (
-        <button className={ `
+        <button id={ id }
+                ref={ ref }
+                className={ `
                             ${styles['css-spectacular-button']} 
                             ${styles['css-spectacular-button-primary-' + type]}
                         ` }
+                disabled={ disabled }
+                onClick={ onClick }
                 style={{ fontWeight }}>
             {
                 /*  === Icon === */
@@ -35,4 +40,4 @@ export const Button = (props: Props) => {
             }
         </button>
     );
-};
+});

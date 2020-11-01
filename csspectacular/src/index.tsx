@@ -1,10 +1,9 @@
 import * as React from 'react';
 import styles from './styles.module.css';
 
-
 // ============ THEME SYSTEM ============
 export { ThemeContextProvider as CSSpectacularThemeProvider } from './Themes/ThemeContext'
-
+export { ComponentTypes } from './Themes/Theme';
 export { Themes } from './Themes/Themes';
 // ============ THEME SYSTEM ============
 
@@ -18,3 +17,5 @@ export const ExampleComponent = () => {
  */
 export { Button } from './Components/Button/Button'
 // ============ EXPORTS ============
+
+export * from './Shared/BaseProps';
