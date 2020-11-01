@@ -106,6 +106,15 @@ const __theme_default: Theme = {
         cssPropertyName: '--primary-text-event-5',
         color: '#fff'
     },
+    /**
+     * ===============================================================================
+     * @description Focus Shadow
+     * ===============================================================================
+     */
+    Focus_Shadow_Color: {
+        cssPropertyName: '--focus-shadow',
+        color: '#cccccc'
+    }
 };
 
 export default __theme_default;

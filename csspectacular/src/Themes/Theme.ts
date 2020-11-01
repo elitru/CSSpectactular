@@ -23,6 +23,8 @@ export interface Theme {
     readonly Text_Primary_5: ThemeColor;
     readonly Primary_5_Event: ThemeColor;
     readonly Text_Primary_5_Event: ThemeColor;
+
+    readonly Focus_Shadow_Color: ThemeColor;
 }
 
 export interface ThemeColor {
