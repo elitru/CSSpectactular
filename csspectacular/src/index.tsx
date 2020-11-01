@@ -1,5 +1,5 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import * as React from 'react';
+import styles from './styles.module.css';
 
 
 // ============ THEME SYSTEM ============
@@ -11,3 +11,10 @@ export { Themes } from './Themes/Themes';
 export const ExampleComponent = () => {
   return <div className={styles.test}>Example Component</div>
 }
+
+// ============ EXPORTS ============
+/**
+ * @exports Button
+ */
+export { Button } from './Components/Button/Button'
+// ============ EXPORTS ============

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+.css-spectacular-button {
+    box-sizing: border-box;
+    padding: 8px 16px 10px 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 350ms;
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: none;
+}
+
+.css-spectacular-button::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 350ms;
+    z-index: -1;
+}
+
+.css-spectacular-button:hover::before {
+    height: 100%;
+}
+
+.css-spectacular-button-primary-1:focus {
+    opacity: .8;
+}
+
+/* Primary 1 */
+.css-spectacular-button-primary-1 {
+    background: var(--primary-1);
+    color: var(--primary-text-1);
+}
+
+.css-spectacular-button-primary-1:hover {
+    color: var(--primary-text-event-1);
+}
+
+.css-spectacular-button-primary-1::before {
+    background: var(--primary-event-1);
+}

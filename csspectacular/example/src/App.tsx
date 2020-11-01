@@ -1,16 +1,16 @@
 import React from 'react'
 
-import { ExampleComponent, Themes, CSSpectacularThemeProvider } from 'csspectacular'
+import { Themes, CSSpectacularThemeProvider, Button } from 'csspectacular'
 import 'csspectacular/dist/index.css'
 
 const App = () => {
   return (
-    <div>
+    <div style={{padding: '30px'}}>
       <CSSpectacularThemeProvider theme={ Themes.Default }>
-        <ExampleComponent />
+          <Button text="Primary 1" />
       </CSSpectacularThemeProvider>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
