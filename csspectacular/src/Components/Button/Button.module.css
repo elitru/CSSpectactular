@@ -1,4 +1,5 @@
 .css-spectacular-button {
+    width: auto;
     box-sizing: border-box;
     padding: 8px 16px 10px 16px;
     border: none;
@@ -7,7 +8,7 @@
     position: relative;
     z-index: 1;
     transition: all 350ms;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     outline: none;

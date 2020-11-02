@@ -38,7 +38,6 @@ const App = () => {
             <Button text="Primary 1"
                     id="test-id"
                     className="test"
-                    icon="❤"
                     ref={ buttonRef }
                     onClick={ () => alert('I\'ve just been clicked!') } />
             <Button text="Primary 2"
