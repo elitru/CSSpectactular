@@ -1,0 +1,38 @@
+.css-spectacular-checkbox-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.css-spectacular-checkbox-container button {
+    margin-right: 8px;
+    border: solid 2px var(--checkbox-text-color);;
+    border-radius: 2px;
+    background: transparent;
+    padding: 0px;
+    transition: all 350ms;
+    cursor: pointer;
+}
+
+.css-spectacular-checkbox-container span {
+    font-size: 16px;
+    color: var(--checkbox-text-color);
+}
+
+.css-spectacular-checkbox-icon {
+    opacity: 0;
+}
+
+.css-spectacular-checkbox-icon-checked {
+    opacity: 1;
+}
+
+.css-spectacular-checkbox-container-disabled {
+    opacity: .8;
+}
+
+.css-spectacular-checkbox-container-disabled button {
+    cursor: not-allowed !important;
+}

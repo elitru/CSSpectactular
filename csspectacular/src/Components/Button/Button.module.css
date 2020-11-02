@@ -14,6 +14,8 @@
     outline: none;
     align-items: center;
     align-content: center;
+    overflow: hidden;
+    border-radius: 2px;
 }
 
 .css-spectacular-button::before {

@@ -1,0 +1,23 @@
+.css-spectacular-check-container {
+    display: block;
+    position: relative;
+    margin-top: -1px;
+}
+
+.css-spectacular-check-container span {
+    border-radius: 3px;
+    position: absolute;
+    transition: all 350ms;
+}
+
+.css-spectacular-check-container span:first-child {
+    transform: rotate(42deg) translateX(50%);
+    top: 0px;
+    right: 32%;
+}
+
+.css-spectacular-check-container span:last-child {
+    transform: rotate(-30deg);
+    bottom: 6%;
+    left: 18%;
+}

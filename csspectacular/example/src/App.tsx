@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './index.css';
 
-import { Themes, CSSpectacularThemeProvider, Button, ComponentTypes, MultiButton, MultiButtonOption } from 'csspectacular'
+import { Themes, CSSpectacularThemeProvider, Button, ComponentTypes, MultiButton, MultiButtonOption, CheckBox } from 'csspectacular'
 import 'csspectacular/dist/index.css'
 
 const App = () => {
@@ -64,6 +64,14 @@ const App = () => {
             <MultiButton type={ ComponentTypes.Primary_3 } options={ multiOptions } closeableWithEscape={ true } />
             <MultiButton type={ ComponentTypes.Primary_4 } options={ multiOptions } closeableWithEscape={ true } />
             <MultiButton type={ ComponentTypes.Primary_5 } options={ multiOptions } closeableWithEscape={ true } />
+          </div>
+          <div>
+            <h1>CheckBox</h1>
+            <CheckBox description="Hello World" checked onChangeCheckState={(checked) => alert(checked)} />
+            <CheckBox type={ ComponentTypes.Primary_2 } checked description="Hello World" onChangeCheckState={(checked) => alert(checked)} />
+            <CheckBox type={ ComponentTypes.Primary_3 } checked description="Hello World" onChangeCheckState={(checked) => alert(checked)} />
+            <CheckBox type={ ComponentTypes.Primary_4 } checked description="Hello World" onChangeCheckState={(checked) => alert(checked)} />
+            <CheckBox type={ ComponentTypes.Primary_5 } checked description="Hello World" onChangeCheckState={(checked) => alert(checked)} />
           </div>
       </CSSpectacularThemeProvider>
     </div>

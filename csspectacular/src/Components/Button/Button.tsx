@@ -20,7 +20,7 @@ export const Button = React.forwardRef<HTMLButtonElement, Props>((props, ref) =>
                 className={ `
                             ${styles['css-spectacular-button']} 
                             ${styles['css-spectacular-button-primary-' + type]} 
-                            ${className}
+                            ${className ? className : ''}
                         ` }
                 disabled={ disabled }
                 onClick={ onClick }

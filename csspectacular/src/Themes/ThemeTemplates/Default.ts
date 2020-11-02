@@ -154,7 +154,16 @@ const __theme_default: Theme = {
     Focus_Shadow_Color: {
         cssPropertyName: '--focus-shadow',
         color: '#cccccc'
-    }
+    },
+    /**
+     * ===============================================================================
+     * @description Text Color
+     * ===============================================================================
+     */
+    CheckBox_Text_Color: {
+        cssPropertyName: '--checkbox-text-color',
+        color: '#222'
+    },
 };
 
 export default __theme_default;
