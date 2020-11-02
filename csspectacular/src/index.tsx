@@ -16,6 +16,11 @@ export const ExampleComponent = () => {
  * @exports Button
  */
 export { Button } from './Components/Button/Button'
+
+/**
+ * @exports MultiButton
+ */
+export { MultiButton, MultiButtonOption } from './Components/MultiButton/MultiButton'
 // ============ EXPORTS ============
 
 export * from './Shared/BaseProps';

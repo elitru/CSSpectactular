@@ -19,3 +19,7 @@ export interface IComponentType {
 export interface IDisabled {
     disabled?: boolean;
 }
+
+export interface ICloseableWithEscape {
+    closeableWithEscape?: boolean;
+}

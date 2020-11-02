@@ -1,0 +1,350 @@
+.css-multi-spectacular-button-content-container {
+    position: relative;
+    display: inline-block;
+}
+
+.css-multi-spectacular-button-container {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.css-multi-spectacular-button {
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    transition: all 350ms;
+    display: inline-flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: none;
+    align-items: center;
+    align-content: center;
+    padding: 8px 16px 10px 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.css-multi-spectacular-button::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 350ms;
+    z-index: -1;
+}
+
+.css-multi-spectacular-button:hover::before {
+    height: 100%;
+}
+
+.css-multi-spectacular-button:focus {
+    box-shadow: 0px 0px 10px 3px var(--focus-shadow);
+}
+
+.css-multi-spectacular-button:disabled{
+    opacity: .8;
+    cursor: not-allowed;
+}
+
+.css-multi-spectacular-button:disabled:hover::before {
+    height: 3px;
+}
+
+.css-multi-spectacular-button .with-icon {
+    padding-left: 10px;
+}
+
+.css-multi-spectacular-button-change-option {
+    width: 26px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 8px 6px 10px 6px;
+    position: relative;
+    cursor: pointer;
+    border-left: solid 2px;
+    z-index: 1;
+}
+
+.css-multi-spectacular-button-change-option::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 350ms;
+    z-index: -1;
+}
+
+.css-multi-spectacular-button-change-option:hover::before {
+    height: 100%;
+}
+
+.css-multi-spectacular-button-change-option span {
+    width: 2px;
+    height: 16px;
+    transition: all 350ms;
+}
+
+.css-multi-spectacular-button-change-option span:first-child {
+    display: block;
+    position: absolute;
+    left: 13px;
+    transform: rotate(-45deg);
+}
+
+.css-multi-spectacular-button-change-option span:last-child {
+    position: absolute;
+    left: 23px;
+    transform: rotate(45deg);
+}
+
+.css-multi-spectacular-button-options {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+    min-width: 100%;
+    width: auto;
+    box-sizing: border-box;
+    z-index: 1000000000000000000000000000;
+}
+
+.css-multi-spectacular-button-options span {
+    padding: 6px 16px;
+    cursor: pointer;
+    border-bottom: solid 1px;
+    border-radius: 2px;
+    display: block;
+    margin: 3px 0px;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.css-multi-spectacular-button-options span:hover {
+    opacity: .8;
+}
+
+/* Primary 1 */
+.css-multi-spectacular-button-primary-1 {
+    background: var(--primary-1);
+    color: var(--primary-text-1);
+}
+
+.css-multi-spectacular-button-primary-1:hover {
+    color: var(--primary-text-event-1);
+}
+
+.css-multi-spectacular-button-primary-1::before {
+    background: var(--primary-event-1);
+}
+
+.css-multi-spectacular-button-primary-1:disabled:hover {
+    color: var(--primary-text-1);
+}
+
+.css-multi-spectacular-button-change-option-primary-1 {
+    border-left-color: var(--primary-event-1);
+    background: var(--primary-1);
+}
+
+.css-multi-spectacular-button-change-option-primary-1::before {
+    background: var(--primary-event-1);
+}
+
+.css-multi-spectacular-button-change-option-primary-1 span {
+    background: var(--primary-text-1);
+}
+
+.css-multi-spectacular-button-change-option-primary-1:hover > span {
+    background: var(--primary-text-event-1);
+}
+
+.css-multi-spectacular-button-options-primary-1 span {
+    background: var(--primary-option-background-1);
+    color: var(--primary-option-text-1);
+    border-bottom-color: var(--primary-option-text-1);
+}
+
+/* Primary 2 */
+.css-multi-spectacular-button-primary-2 {
+    background: var(--primary-2);
+    color: var(--primary-text-2);
+}
+
+.css-multi-spectacular-button-primary-2:hover {
+    color: var(--primary-text-event-2);
+}
+
+.css-multi-spectacular-button-primary-2::before {
+    background: var(--primary-event-2);
+}
+
+.css-multi-spectacular-button-primary-2:disabled:hover {
+    color: var(--primary-text-2);
+}
+
+.css-multi-spectacular-button-change-option-primary-2 {
+    border-left-color: var(--primary-event-2);
+    background: var(--primary-2);
+}
+
+.css-multi-spectacular-button-change-option-primary-2::before {
+    background: var(--primary-event-2);
+}
+
+.css-multi-spectacular-button-change-option-primary-2 span {
+    background: var(--primary-text-2);
+}
+
+.css-multi-spectacular-button-change-option-primary-2:hover > span {
+    background: var(--primary-text-event-2);
+}
+
+.css-multi-spectacular-button-options-primary-2 span {
+    background: var(--primary-option-background-2);
+    color: var(--primary-option-text-2);
+    border-bottom-color: var(--primary-option-text-2);
+}
+
+/* Primary 3 */
+.css-multi-spectacular-button-primary-3 {
+    background: var(--primary-3);
+    color: var(--primary-text-3);
+}
+
+.css-multi-spectacular-button-primary-3:hover {
+    color: var(--primary-text-event-3);
+}
+
+.css-multi-spectacular-button-primary-3::before {
+    background: var(--primary-event-3);
+}
+
+.css-multi-spectacular-button-primary-3:disabled:hover {
+    color: var(--primary-text-3);
+}
+
+.css-multi-spectacular-button-change-option-primary-3 {
+    border-left-color: var(--primary-event-3);
+    background: var(--primary-3);
+}
+
+.css-multi-spectacular-button-change-option-primary-3::before {
+    background: var(--primary-event-3);
+}
+
+.css-multi-spectacular-button-change-option-primary-3 span {
+    background: var(--primary-text-3);
+}
+
+.css-multi-spectacular-button-change-option-primary-3:hover > span {
+    background: var(--primary-text-event-3);
+}
+
+.css-multi-spectacular-button-options-primary-3 span {
+    background: var(--primary-option-background-3);
+    color: var(--primary-option-text-3);
+    border-bottom-color: var(--primary-option-text-3);
+}
+
+/* Primary 4 */
+.css-multi-spectacular-button-primary-4 {
+    background: var(--primary-4);
+    color: var(--primary-text-4);
+}
+
+.css-multi-spectacular-button-primary-4:hover {
+    color: var(--primary-text-event-4);
+}
+
+.css-multi-spectacular-button-primary-4::before {
+    background: var(--primary-event-4);
+}
+
+.css-multi-spectacular-button-primary-4:disabled:hover {
+    color: var(--primary-text-4);
+}
+
+.css-multi-spectacular-button-change-option-primary-4 {
+    border-left-color: var(--primary-event-4);
+    background: var(--primary-4);
+}
+
+.css-multi-spectacular-button-change-option-primary-4::before {
+    background: var(--primary-event-4);
+}
+
+.css-multi-spectacular-button-change-option-primary-4 span {
+    background: var(--primary-text-4);
+}
+
+.css-multi-spectacular-button-change-option-primary-4:hover > span {
+    background: var(--primary-text-event-4);
+}
+
+.css-multi-spectacular-button-options-primary-4 span {
+    background: var(--primary-option-background-4);
+    color: var(--primary-option-text-4);
+    border-bottom-color: var(--primary-option-text-4);
+}
+
+/* Primary 5 */
+.css-multi-spectacular-button-primary-5 {
+    background: var(--primary-5);
+    color: var(--primary-text-5);
+}
+
+.css-multi-spectacular-button-primary-5:hover {
+    color: var(--primary-text-event-5);
+}
+
+.css-multi-spectacular-button-primary-5::before {
+    background: var(--primary-event-5);
+}
+
+.css-multi-spectacular-button-primary-5:disabled:hover {
+    color: var(--primary-text-5);
+}
+
+.css-multi-spectacular-button-change-option-primary-5 {
+    border-left-color: var(--primary-event-5);
+    background: var(--primary-5);
+}
+
+.css-multi-spectacular-button-change-option-primary-5::before {
+    background: var(--primary-event-5);
+}
+
+.css-multi-spectacular-button-change-option-primary-5 span {
+    background: var(--primary-text-5);
+}
+
+.css-multi-spectacular-button-change-option-primary-5:hover > span {
+    background: var(--primary-text-event-5);
+}
+
+.css-multi-spectacular-button-options-primary-5 span {
+    background: var(--primary-option-background-5);
+    color: var(--primary-option-text-5);
+    border-bottom-color: var(--primary-option-text-5);
+}
