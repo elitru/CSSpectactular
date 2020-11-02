@@ -11,6 +11,8 @@
     flex-direction: row;
     justify-content: space-between;
     outline: none;
+    align-items: center;
+    align-content: center;
 }
 
 .css-spectacular-button::before {
@@ -41,7 +43,9 @@
     height: 3px;
 }
 
-
+.css-spectacular-button .with-icon {
+    padding-left: 10px;
+}
 
 
 /* Primary 1 */

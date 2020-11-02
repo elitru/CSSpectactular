@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Button.module.css';
 import { ComponentTypes } from '../../Themes/Theme';
-import { IComponentType, IDisabled, IFontWeight, IWithId } from '../../Shared/BaseProps';
+import { IComponentType, IDisabled, IFontWeight, IWithClass, IWithId } from '../../Shared/BaseProps';
 
-interface Props extends IWithId, IFontWeight, IComponentType, IDisabled {
+interface Props extends IWithId, IWithClass, IFontWeight, IComponentType, IDisabled {
     text?: string;
     icon?: string | JSX.Element;
     onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void | undefined;
@@ -12,14 +12,15 @@ interface Props extends IWithId, IFontWeight, IComponentType, IDisabled {
 export const Button = React.forwardRef<HTMLButtonElement, Props>((props, ref) => {
     const type: ComponentTypes = props.type ? props.type : ComponentTypes.Primary_1;
     const fontWeight = props.fontWeight ? props.fontWeight : 500;
-    const { id, text, icon, disabled, onClick } = props;
+    const { id, className, text, icon, disabled, onClick } = props;
 
     return (
         <button id={ id }
                 ref={ ref }
                 className={ `
                             ${styles['css-spectacular-button']} 
-                            ${styles['css-spectacular-button-primary-' + type]}
+                            ${styles['css-spectacular-button-primary-' + type]} 
+                            ${className}
                         ` }
                 disabled={ disabled }
                 onClick={ onClick }
@@ -34,10 +35,8 @@ export const Button = React.forwardRef<HTMLButtonElement, Props>((props, ref) =>
                 //otherwise display icon compoent or null if icon is unset
                 icon ? icon : null
             }
-            { 
-                /* === Text === */
-                text
-            }
+            { /* === Text === */ }
+            <span className={ icon ? styles['with-icon'] : undefined }>{ text }</span>
         </button>
     );
 });

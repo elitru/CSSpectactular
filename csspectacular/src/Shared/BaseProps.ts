@@ -4,6 +4,10 @@ export interface IWithId {
     id?: string;
 }
 
+export interface IWithClass {
+    className?: string;
+}
+
 export interface IFontWeight {
     fontWeight?: "-moz-initial" | "inherit" | "initial" | "revert" | "unset" | "bold" | "normal" | (number & {}) | "bolder" | "lighter" | undefined;
 }
