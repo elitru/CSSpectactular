@@ -78,8 +78,12 @@ export const MultiButton = React.forwardRef<HTMLButtonElement, Props>((props, re
                             options.map((option: MultiButtonOption, index: number) => {
                                 return (
                                     <span key={ option.displayText + index }
+                                        style={{ cursor: disabled ? 'not-allowed' : 'pointer' }}
                                         onClick={ 
                                             () => {
+                                                if(option.disabled)
+                                                    return
+
                                                 setActiveOption(option);
                                                 setOptionsVisible(false);
                                             } 

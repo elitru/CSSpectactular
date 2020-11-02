@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import './index.css';
 
-import { Themes, CSSpectacularThemeProvider, Button, ComponentTypes, MultiButton, MultiButtonOption, CheckBox } from 'csspectacular'
-import 'csspectacular/dist/index.css'
+import { Themes, CSSpectacularThemeProvider, Button, ComponentTypes, MultiButton, MultiButtonOption, CheckBox, RadioGroup, RadioGroupValue } from 'csspectacular'
+import 'csspectacular/dist/index.css';
 
 const App = () => {
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -17,6 +17,19 @@ const App = () => {
       displayText: 'Long Option',
       active: true,
       onClick: () => alert('Long')
+    }
+  ];
+
+  const radioGroupOptions: RadioGroupValue[] = [
+    {
+      value: { name: 'Maximilian Mustermann' },
+      displayText: 'Max Mustermann',
+      disabled: true
+    },
+    {
+      value: { name: 'Jonathan Doe' },
+      displayText: 'John Doe',
+      selected: true
     }
   ];
 
@@ -72,6 +85,10 @@ const App = () => {
             <CheckBox type={ ComponentTypes.Primary_3 } checked description="Hello World" onChangeCheckState={(checked) => alert(checked)} />
             <CheckBox type={ ComponentTypes.Primary_4 } checked description="Hello World" onChangeCheckState={(checked) => alert(checked)} />
             <CheckBox type={ ComponentTypes.Primary_5 } checked description="Hello World" onChangeCheckState={(checked) => alert(checked)} />
+          </div>
+          <div>
+            <h1>Radio Group</h1>
+            <RadioGroup values={ radioGroupOptions } direction="row" separatorSpace="40px" circleSize={24} onSelectionChanged={ (value) => alert(value.name) } />
           </div>
       </CSSpectacularThemeProvider>
     </div>

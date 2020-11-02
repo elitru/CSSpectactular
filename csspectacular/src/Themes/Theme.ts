@@ -36,6 +36,7 @@ export interface Theme {
 
     readonly Focus_Shadow_Color: ThemeColor;
     readonly CheckBox_Text_Color: ThemeColor;
+    readonly RadioButton_Text_Color: ThemeColor;
 }
 
 export interface ThemeColor {

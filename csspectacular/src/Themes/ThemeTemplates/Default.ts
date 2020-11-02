@@ -157,11 +157,20 @@ const __theme_default: Theme = {
     },
     /**
      * ===============================================================================
-     * @description Text Color
+     * @description Checkbox Color
      * ===============================================================================
      */
     CheckBox_Text_Color: {
         cssPropertyName: '--checkbox-text-color',
+        color: '#222'
+    },
+    /**
+     * ===============================================================================
+     * @description Radio Button Color
+     * ===============================================================================
+     */
+    RadioButton_Text_Color: {
+        cssPropertyName: '--radio-button-text-color',
         color: '#222'
     },
 };

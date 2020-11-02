@@ -23,9 +23,14 @@ export { Button } from './Components/Button/Button';
 export { MultiButton, MultiButtonOption } from './Components/MultiButton/MultiButton';
 
 /**
- * @exports MultiButton
+ * @exports CheckBox
  */
 export { CheckBox } from './Components/CheckBox/CheckBox';
+
+/**
+ * @exports RadioGroup
+ */
+export { RadioGroup, RadioGroupValue } from './Components/RadioGroup/RadioGroup';
 // ============ EXPORTS ============
 
 export * from './Shared/BaseProps';
