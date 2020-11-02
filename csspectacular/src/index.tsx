@@ -31,6 +31,11 @@ export { CheckBox } from './Components/CheckBox/CheckBox';
  * @exports RadioGroup
  */
 export { RadioGroup, RadioGroupValue } from './Components/RadioGroup/RadioGroup';
+
+/**
+ * @exports Input
+ */
+export { Input, InputTextChangeEventResult, DefaultValidation } from './Components/Input/Input';
 // ============ EXPORTS ============
 
 export * from './Shared/BaseProps';

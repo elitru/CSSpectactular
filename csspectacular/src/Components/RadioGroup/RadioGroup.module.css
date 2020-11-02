@@ -56,6 +56,42 @@
     background: var(--primary-1);
 }
 
+/* Primary 2 */
+.css-spectacular-radio-button-primary-2 .css-spectacular-radio-button-selected {
+    border-color: var(--primary-2);
+}
+
+.css-spectacular-radio-button-primary-2 .css-spectacular-radio-button-selected::before {
+    background: var(--primary-2);
+}
+
+/* Primary 3 */
+.css-spectacular-radio-button-primary-3 .css-spectacular-radio-button-selected {
+    border-color: var(--primary-3);
+}
+
+.css-spectacular-radio-button-primary-3 .css-spectacular-radio-button-selected::before {
+    background: var(--primary-3);
+}
+
+/* Primary 4 */
+.css-spectacular-radio-button-primary-4 .css-spectacular-radio-button-selected {
+    border-color: var(--primary-4);
+}
+
+.css-spectacular-radio-button-primary-4 .css-spectacular-radio-button-selected::before {
+    background: var(--primary-4);
+}
+
+/* Primary 5 */
+.css-spectacular-radio-button-primary-5 .css-spectacular-radio-button-selected {
+    border-color: var(--primary-5);
+}
+
+.css-spectacular-radio-button-primary-5 .css-spectacular-radio-button-selected::before {
+    background: var(--primary-5);
+}
+
 .css-spectacular-radio-button-disabled {
     opacity: .8;
 }

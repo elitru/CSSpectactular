@@ -173,6 +173,39 @@ const __theme_default: Theme = {
         cssPropertyName: '--radio-button-text-color',
         color: '#222'
     },
+     /**
+     * ===============================================================================
+     * @description Input Colors
+     * ===============================================================================
+     */
+    Input_Backgound_Color: {
+        cssPropertyName: '--input-background-color',
+        color: '#eee'
+    },
+    Input_Text_Color: {
+        cssPropertyName: '--input-text-color',
+        color: '#222'
+    },
+    Input_Title_Color: {
+        cssPropertyName: '--input-title-color',
+        color: '#333'
+    },
+    Input_Placeholder_Color: {
+        cssPropertyName: '--input-placeholder-color',
+        color: '#777'
+    },
+    Input_Error_Color: {
+        cssPropertyName: '--input-error-color',
+        color: '#f62924'
+    },
+    Input_Valid_Color: {
+        cssPropertyName: '--input-valid-color',
+        color: '#2ada70'
+    },
+    Input_Border_Color: {
+        cssPropertyName: '--input-border-color',
+        color: '#222'
+    },
 };
 
 export default __theme_default;

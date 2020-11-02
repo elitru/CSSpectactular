@@ -37,6 +37,13 @@ export interface Theme {
     readonly Focus_Shadow_Color: ThemeColor;
     readonly CheckBox_Text_Color: ThemeColor;
     readonly RadioButton_Text_Color: ThemeColor;
+    readonly Input_Text_Color: ThemeColor;
+    readonly Input_Title_Color: ThemeColor;
+    readonly Input_Placeholder_Color: ThemeColor;
+    readonly Input_Backgound_Color: ThemeColor;
+    readonly Input_Error_Color: ThemeColor;
+    readonly Input_Valid_Color: ThemeColor;
+    readonly Input_Border_Color: ThemeColor;
 }
 
 export interface ThemeColor {

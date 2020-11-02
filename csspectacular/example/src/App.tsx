@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './index.css';
 
-import { Themes, CSSpectacularThemeProvider, Button, ComponentTypes, MultiButton, MultiButtonOption, CheckBox, RadioGroup, RadioGroupValue } from 'csspectacular'
+import { Themes, CSSpectacularThemeProvider, Button, ComponentTypes, MultiButton, MultiButtonOption, CheckBox, RadioGroup, RadioGroupValue, Input, DefaultValidation } from 'csspectacular'
 import 'csspectacular/dist/index.css';
 
 const App = () => {
@@ -23,8 +23,7 @@ const App = () => {
   const radioGroupOptions: RadioGroupValue[] = [
     {
       value: { name: 'Maximilian Mustermann' },
-      displayText: 'Max Mustermann',
-      disabled: true
+      displayText: 'Max Mustermann'
     },
     {
       value: { name: 'Jonathan Doe' },
@@ -89,6 +88,14 @@ const App = () => {
           <div>
             <h1>Radio Group</h1>
             <RadioGroup values={ radioGroupOptions } direction="row" separatorSpace="40px" circleSize={24} onSelectionChanged={ (value) => alert(value.name) } />
+            <RadioGroup type={ComponentTypes.Primary_2} values={ radioGroupOptions } direction="row" separatorSpace="40px" circleSize={24} onSelectionChanged={ (value) => alert(value.name) } />
+            <RadioGroup type={ComponentTypes.Primary_3} values={ radioGroupOptions } direction="row" separatorSpace="40px" circleSize={24} onSelectionChanged={ (value) => alert(value.name) } />
+            <RadioGroup type={ComponentTypes.Primary_4} values={ radioGroupOptions } direction="row" separatorSpace="40px" circleSize={24} onSelectionChanged={ (value) => alert(value.name) } />
+            <RadioGroup type={ComponentTypes.Primary_5} values={ radioGroupOptions } direction="row" separatorSpace="40px" circleSize={24} onSelectionChanged={ (value) => alert(value.name) } />
+          </div>
+          <div>
+            <h1>Input</h1>
+            <Input title="Email" placeholder="john.doe@example.com" onTextChange={ DefaultValidation.Email } />
           </div>
       </CSSpectacularThemeProvider>
     </div>
